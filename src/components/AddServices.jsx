@@ -80,10 +80,10 @@ const AddServices = () => {
                         onChange={(e) => { setServiceCategory(e.target.value) }}
                     >
                         <option value="">Select Category</option>
-                        <option value="Depression-hub">Depression hub</option>
-                        <option value="Maternity-hub">Maternity hub</option>
-                        <option value="Cancer-hub">Cancer hub</option>
-                        <option value="Diabetes-hub">Diabetes hub</option>
+                        <option value="depressionhub">depression hub</option>
+                        <option value="maternityhub">maternity hub</option>
+                        <option value="cancerhub">cancer hub</option>
+                        <option value="diabeteshub">diabetes hub</option>
                     </select>
                     <br />
 
