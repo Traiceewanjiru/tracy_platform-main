@@ -1,0 +1,13 @@
+h4 {
+    background-color: #880e4f; /* Wine/Maroon-Pink */
+    color: #fff;
+}
+
+h6 {
+    color: #d63384; /* Deep Pink */
+}
+
+.badge {
+    background-color: #ffb6c1; /* Light Pink */
+    color: #880e4f;
+}

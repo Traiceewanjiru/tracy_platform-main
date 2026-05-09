@@ -1,36 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import SignInComponent from './components/SignInComponent';
 import SignUpComponent from './components/SignUpComponent';
-import HomeComponent from './components/HomeComponent';
+import SignInComponent from './components/SignInComponent';
+import AddProduct from './components/AddProduct';
+import AddService from './components/AddService';
+import ProductsComponent from './components/ProductsComponent';
+import CartComponent from './components/CartComponent';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import AboutUs from './components/AboutUs';
+import HomeComponent from './components/HomeComponent';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-import AddServices from './components/AddServices';
+// import MakePayment from "./components/MakePayment"; // Later
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-       
-        <header className="App-header">
-          <h1>The Safespace</h1>
-          <h6>Create awareness with us and share your journey with others.</h6>
-        </header>
+        <Navbar />
+        <main className="container-fluid">
+          <Routes>
+            <Route path='/signup' element={<SignUpComponent />} />
+            <Route path='/signin' element={<SignInComponent />} />
+            <Route path='/addproduct' element={<AddProduct />} />
+            <Route path='/addservice' element={<AddService />} />
+            <Route path='/aboutus' element={<AboutUs />} />
+            <Route path='/products' element={<ProductsComponent type="products" />} />
+            <Route path='/services' element={<ProductsComponent type="services" />} />
+            <Route path='/' element={<HomeComponent />} />
+            <Route path='/cart' element={<CartComponent />} />
+          </Routes>
+        </main>
+        <Footer />
       </div>
-
-      <Routes>
-        <Route path='/signin' element={<SignInComponent />} />
-        <Route path='/signup' element={<SignUpComponent />} />
-        <Route path='/' element={<HomeComponent />} />
-        <Route path='/addservice' element={<AddServices/>} />
-        <Route path='/navbar' element={<Navbar />} />
-        <Route path='/aboutus' element={<AboutUs />} />
-      </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
+
