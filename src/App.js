@@ -16,7 +16,7 @@ import "bootstrap/dist/js/bootstrap.min.js";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/tracy_platform-main">
       <div className="App">
         <Navbar />
         <main className="container-fluid">
