@@ -29,7 +29,7 @@ jobs:
           node-cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build React App
         run: npm run build
