@@ -28,7 +28,7 @@ const AboutUs = () => {
                             <div className="position-relative">
                                 <div className="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-10 rounded-5 translate-middle-x translate-middle-y" style={{ transform: 'translate(20px, 20px)' }}></div>
                                 <img 
-                                    src="/assets/beauty_hero.png" 
+                                    src={process.env.PUBLIC_URL + "/assets/beauty_hero.png"} 
                                     alt="Beauty Products" 
                                     className="img-fluid rounded-5 shadow-lg position-relative"
                                     style={{ objectFit: 'cover', height: '500px', width: '100%' }}
